@@ -123,6 +123,9 @@ h3 {
 #experience {
   margin: 72px 16px 16px 16px;
 }
+#experience row p {
+  font-size: 14px;
+}
 #education {
   margin: 0 16px;
 }
