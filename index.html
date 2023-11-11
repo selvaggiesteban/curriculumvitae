@@ -1,95 +1,200 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Esteban Selvaggi - Programador Web y SEO</title>
+    <title>Esteban Selvaggi - Desarrollador web Full Stack, SEO y experto en WordPress</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Estudiante de 22 años ubicado en la ciudad de Lanús, provincia de Buenos Aires en busca de empleo para el cargo de Programador Web / SEO / Maquetador WordPress (Presencial – híbrido – En remoto) dentro de la industria del Desarrollo Web y Marketing Digital con el objetivo de brindar servicios excepcionales a personas y empresas de distintos sectores ayudándoles a establecer una presencia en línea efectiva y a lograr resultados impresionantes en el mundo digital."
+      content="Desarrollador web Full Stack, SEO y experto en WordPress con 5 años de experiencia en la industria del marketing digital."
     />
     <meta name="author" content="Esteban Selvaggi" />
     <meta name="theme-color" content="#000" />
-    <link rel="shortcut icon" href="..." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/selvaggiesteban/curriculumvitae/master/assets/img/cover.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/selvaggiesteban/curriculumvitae/master/assets/img/esteban-selvagi-cover.webp"
+    />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="1024" />
     <!-- Stylesheet -->
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap 5.3.0 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <!-- Fontawesome -->
+    <!-- Slick carousel 1.9.0 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+    <!-- Font awesome -->
     <script
       src="https://kit.fontawesome.com/91eae8b0c2.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Menú de navegación -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#info">Resumen</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Estudios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    
-    <section id="home">
-      <!-- Introduction -->
-      <div class="mainInner">
-        <img
-          class="profile"
-          src="assets/img/selvaggiesteban.jpg"
-          alt="Diseñador web"
-        />
-        <p>Esteban Selvaggi</p>
-        <h2>Programador Web y SEO</h2>
-        <div class="cta">
-          <a class="button_primary" href="https://wa.me/+5491153323937"
-            ><i class="fa-brands fa-whatsapp fa-2x"></i>Enviame un WhatsApp</a
-          >
-          <a class="button_secundary" href="#info">SABER MÁS</a>
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resumen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Educación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aptitudes">Aptitudes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <a href="#info" class="scroll_down" id="scroll_down"></a>
+      </div>
+    </nav>
+    <!-- Presentación del perfil -->
+    <section id="profile">
+      <div class="profile_wrapper">
+        <img
+          class="profile_picture"
+          src="assets/img/selvaggiesteban.jpg"
+          alt="Esteban Selvaggi"
+        />
+        <h1>Esteban Selvaggi</h1>
+        <h2>Desarrollador web Full Stack, SEO y experto en WordPress</h2>
+        <div class="cta">
+          <a class="button_primary" href="https://wa.me/+5491153323937" target="_blank"
+            ><i class="fa-brands fa-whatsapp fa-2x"></i>HABLEMOS</a
+          >
+          <a class="button_secundary" href="#resume">MÁS INFORMACIÓN</a>
+        </div>
+        <a href="#resume" class="scroll_down" id="scroll_down"></a>
       </div>
     </section>
+    <!-- Cuerpo del CV -->
     <div class="container">
-      <section id="info">
-        <!-- Profile -->
-        <h3>Resumen</h3>
-        <div class="row no-gutters">
-          <p>
-            Estudiante de 22 años ubicado en la ciudad de Lanús, provincia de Buenos Aires en busca de empleo para el cargo de Programador Web / SEO / Maquetador WordPress (Presencial – híbrido – En remoto) dentro de la industria del Desarrollo Web y Marketing Digital con el objetivo de brindar servicios excepcionales a personas y empresas de distintos sectores ayudándoles a establecer una presencia en línea efectiva y a lograr resultados impresionantes en el mundo digital.
-          </p>
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <!-- Resumen -->
+          <section id="resume">
+            <h3>Resumen</h3>
+            <br>
+            <div class="row no-gutters">
+              <p>
+                Estudiante de 22 años ubicado en Buenos Aires, Argentina en busca de empleo para el cargo de Desarrollador web Full Stack /
+                SEO / Maquetador WordPress (Presencial – Híbrido – En remoto) dentro
+                de la industria del marketing digital con el
+                objetivo de brindar servicios excepcionales a personas y empresas, ayudándoles a establecer una presencia en línea
+                efectiva y a lograr resultados impresionantes.
+              </p>
+            </div>
+          </section>
+          <!-- Educación -->
+          <section id="education">
+            <h3>Educación</h3>
+            <br>
+            <div class="row no-gutters">
+              <h2>Instituto Santa Teresa</h2>
+                <b>Bachiller en Economía y Gestión de las Organizaciones</b>
+                <p>
+                  Educación inicial · Educación primaria · Educación secundaria
+                </p>
+                <b style="margin-top: 14px;">Operador avanzado de PC</b>
+                <p>
+                  Windows · Arquitectura de la PC · Paquete Office · Diseño
+                  gráfico y multimedia · Redes e Internet
+                </p>
+                <h2 style="margin-top: 22px;">Henry</h2>
+                <b>Desarrollo web Full Stack</b>
+                <p>
+                  Front-End, enfocado en la parte visual, estética y de
+                  interacción.
+                  <br />
+                  Back-End, apuntado a la lógica para conectar bases de datos y
+                  crear las diversas funcionalidades que un sitio pueda necesitar.
+                </p>
+            </div>
+          </section>
         </div>
-      </section>
+        <div class="col-md-6">
+          <!-- Aptitudes -->
+          <section id="aptitudes">
+            <h3>Aptitudes</h3>
+            <br>
+            <b>Front End</b>
+            <div id="icons">
+              <img title="CSS3" alt="CSS3" src="assets/img/css3.webp" />
+              <img title="HTML5" alt="HML5" src="assets/img/html5.webp" />
+              <img title="JavaScript" alt="JavaScript" src="assets/img/javascript.webp" />
+            </div>
+            <br>
+            <b>Back End</b>
+            <div id="icons">
+              <img title="MySQL" alt="MySQL" src="assets/img/mysql.webp" />
+              <img title="PHP" alt="PHP" src="assets/img/php.webp" />
+            </div>
+            <br>
+            <b>SEO</b>
+            <div id="icons">
+              <img title="Google Analytics" alt="Google Analytics" src="assets/img/analytics.webp" />
+              <img title="Looker Studio" alt="Looker Studio" src="assets/img/looker-studio.webp" />
+              <img title="Google My Business" alt="Google My Business" src="assets/img/mybusiness.webp">
+              <img title="Google Search Console" alt="Google Search Console" src="assets/img/searchconsole.webp">
+              <img title="PageSpeed Insights" alt="PageSpeed Insights" src="assets/img/pagespeedinsights.webp">
+              <img title="Screaming Frog SEO Spider" alt="Screaming Frog SEO Spider" src="assets/img/screamingfrog.webp">
+              <img title="Semrush" alt="Semrush" src="assets/img/semrush.webp" />
+            </div>
+            <br>
+            <b>Otros</b>
+            <div id="icons">
+              <img title="Git" alt="Git" src="assets/img/git.webp" />
+              <img title="Github" alt="Github" src="assets/img/github.webp" />
+              <img title="WordPress" alt="WordPress" src="assets/img/wordpress.webp" />
+              <img title="WooCommerce" alt="WooCommerce" src="assets/img/woocommerce.webp" />
+              <img title="Elementor" alt="Elementor" src="assets/img/elementor.webp" />
+              <img title="Bootstrap" alt="Bootstrap" src="assets/img/bootstrap.webp" />
+              <img title="ChatGPT" alt="ChatGPT" src="assets/img/chatgpt.svg" />
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Experiencia -->
       <section id="experience">
         <div class="row no-gutters">
           <div class="col-md-3">
@@ -97,304 +202,323 @@
           </div>
           <div class="col-md-9">
             <div class="row no-gutters">
-              <h2>Desarrollador Full Stack</h2>
-              <b>Estudio de Diseño DMG srl · Jornada completa</b>
-              <p>
-                ene. 2023 - actualidad · 8 meses<br />Lomas de Zamora, Provincia
-                de Buenos Aires, Argentina · Presencial<br /><br>
-                <b>Aptitudes:</b> CSS · PHP · MySQL · WooCommerce · Google Analytics · Google Ads · Looker Studio · Meta Business Suite · Optimización para motores de búsqueda (SEO) · HTML5 · JavaScript · WordPress · GitHub · Elementor
-              </p>
-              <hr>
+              <div class="col-4 col-md-2">
+                <img
+                  src="assets/img/vestigiostudio.jpeg"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div class="col-8 col-md-10">
+                <h2>Desarrollador web Full Stack</h2>
+                <a href="https://vestigiostudio.com/" target="_blank">Vestigio Studio</a>
+                <p>
+                  oct. 2023 - actualidad · 2 meses<br />Buenos Aires, Provincia de
+                  Buenos Aires, Argentina · Híbrido<br /><br />
+                </p>
+              </div>
+              <hr />
             </div>
             <div class="row no-gutters">
-              <h2>Desarrollador Full Stack</h2>
-              <b>Profesional independiente</b>
-              <p>
-                mar. 2018 - actualidad · 5 años 6 meses<br />Provincia de Buenos Aires, Argentina ·
-                Híbrido<br /><br>
-                <b>Aptitudes:</b> CSS · PHP · MySQL · WooCommerce · Google Analytics · Google Ads · Looker Studio · Meta Business Suite · Optimización para motores de búsqueda (SEO) · HTML5 · JavaScript · WordPress · GitHub · Elementor
-              </p>
-              <hr>
+              <div class="col-4 col-md-2">
+                <img src="assets/img/octonove.jpg" width="100" height="100" />
+              </div>
+              <div class="col-8 col-md-10">
+                <h2>SEO</h2>
+                <a href="https://octonove.com" target="_blank">Octonove Agency</a>
+                <p>
+                  sep. 2023 - actualidad · 3 meses<br />Cartagena, Murcia,
+                  España · Remoto<br /><br />
+                </p>
+              </div>
+              <hr />
             </div>
             <div class="row no-gutters">
-              <h2>Profesor de Informática</h2>
-              <b>Instituto Santa Teresa · Jornada parcial<br>Instituto Gruta Nuestra Señora de Lourdes · Jornada parcial<br>Instituto San Juan Bautista · Jornada parcial<br>Instituto Madre Mercedes Pacheco · Jornada parcial</b>
-              <p>
-                feb. 2022 - feb. 2023 · 1 año<br />Provincia
-                de Buenos Aires, Argentina · Presencial<br /><br>
-                <b>Aptitudes:</b> Organización · Planificación, conducción y evaluación de proyectos de incorporación tecnológica en educación de nivel inicial, nivel primario y nivel secundario · Flexibilidad y adaptación a los cambios · Capacidad de resolución de problemas que puedan generarse con el uso de los equipos · Capacidad de aprendizaje y formación de la ética profesional.
-              </p>
-              <hr>
+              <div class="col-4 col-md-2">
+                <img
+                  src="assets/img/tepromocionamos.jpg"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div class="col-8 col-md-10">
+                <h2>Desarrollador web Full Stack</h2>
+                <a href="https://tepromocionamos.com" target="_blank">Te Promocionamos</a>
+                <p>
+                  sep. 2023 - actualidad · 3 meses<br />Buenos Aires, Provincia
+                  de Buenos Aires, Argentina · Remoto<br /><br />
+                </p>
+              </div>
+              <hr />
             </div>
             <div class="row no-gutters">
-              <h2>Programador de CNC</h2>
-              <b>Mecanizados Mako · Jornada completa</b>
-              <p>
-                may. 2017 - ene. 2021 · 3 años 9 meses<br />Provincia
-                de Buenos Aires, Argentina · Presencial<br /><br>
-                <b>Aptitudes:</b> Operación de maquinaria CNC · AutoCAD
-              </p>
+              <div class="col-4 col-md-2">
+                <img src="assets/img/nice.jpeg" width="100" height="100" />
+              </div>
+              <div class="col-8 col-md-10">
+                <h2>Desarrollador web Full Stack</h2>
+                <a href="https://nice.com" target="_blank">Nice Comunicación</a>
+                <p>
+                  jul. 2023 - actualidad · 5 meses<br />Puerto madero, Provincia
+                  de Buenos Aires, Argentina · Remoto<br /><br />
+                </p>
+              </div>
+              <hr />
+            </div>
+            <div class="row no-gutters">
+              <div class="col-4 col-md-2">
+                <img src="assets/img/mvm.jpg" width="100" height="100" />
+              </div>
+              <div class="col-8 col-md-10">
+                <h2>Desarrollador web Full Stack</h2>
+                <a href="https://linktr.ee/Mvmsocialmediaagency" target="_blank">MVM Social Media Agency</a>
+                <p>
+                  feb. 2023 - sep. 2023 · 8 meses<br />Lanús, Provincia de
+                  Buenos Aires, Argentina · Híbrido<br /><br />
+                </p>
+              </div>
+              <hr />
+            </div>
+            <div class="row no-gutters">
+              <div class="col-4 col-md-2">
+                <img src="assets/img/dmg.jpeg" width="100" height="100" />
+              </div>
+              <div class="col-8 col-md-10">
+                <h2>Desarrollador web Full Stack</h2>
+                <a href="https:/estudiodmg.com.ar" target="_blank">Estudio de Diseño DMG srl</a>
+                <p>
+                  ene. 2023 - sep. 2023 · 9 meses<br />Lomas de Zamora,
+                  Provincia de Buenos Aires, Argentina · Presencial<br /><br />
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="education">
-        <div class="row no-gutters">
-          <div class="col-md-3">
-            <h3>Educación</h3>
-          </div>
-          <div class="col-md-9">
-            <div class="row no-gutters">
-              <h2>Instituto Santa Teresa</h2>
-              <b>Bachiller en Economía y Gestión de las Organizaciones</b>
-              <p>
-                Educación inicial · Educación primaria · Educación secundaria
-              </p>
-              <b>Operador avanzado de PC</b>
-              <p>
-                Windows · Arquitectura de la PC · Paquete Office · Diseño
-                gráfico y multimedia · Redes e Internet
-              </p>
-            </div>
-            <div class="row no-gutters">
-              <h2>Henry</h2>
-              <b>Desarrollo web Full Stack</b>
-              <p>
-                Front-End, enfocado en la parte visual, estética y de
-                interacción.
-                <br />
-                Back-End, apuntado a la lógica para conectar bases de datos y
-                crear las diversas funcionalidades que un sitio pueda necesitar.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-        <div id="tech">
-          <img src="assets/img/css3.webp" />
-          <img src="assets/img/html5.webp" />
-          <img src="assets/img/javascript.webp" />
-          <img src="assets/img/git.webp" />
-          <img src="assets/img/mysql.webp" />
-          <img src="assets/img/php.webp" />
-          <img src="assets/img/wordpress.webp" />
-          <img src="assets/img/elementor.webp" />
-          <img src="assets/img/woocommerce.webp" />
-          <img src="assets/img/bootstrap.webp" />
-        </div>
-      </section>
+      <!-- Portfolio de proyectos realizados -->
       <section id="portfolio">
-        <h3>Portfolio</h3>
-        <div class="row no-gutters">
-          <div class="col-md-4">
+        <h3>Portfolio de proyectos realizados</h3>
+        <div class="portfolio">
+          <div>
             <a
               href="https://selvaggiesteban.github.io/mako/index.html"
               target="_blank"
             >
               <img src="assets/img/mockup-mako.png" style="width: 100%" />
-              <p>
-                <span>Mecanizados Mako</span><br />Diseño de página web LANDING
-                PAGE
-              </p>
+              <h2>Diseño de página web LANDING
+                PAGE</h2>
+                <p>Mecanizados Mako</p>
             </a>
           </div>
-          <div class="col-md-4">
+          <div>
             <a href="https://mueblescavah.com.ar" target="_blank">
               <img
                 src="assets/img/mockup-mueblescavah.png"
                 style="width: 100%"
               />
-              <p>
-                <span>Muebles Cavah</span><br />Diseño de página web E-COMMERCE
-                / CARRO DE COMPRAS
-              </p>
+              <h2>Diseño de página web E-COMMERCE
+                / CARRO DE COMPRAS</h2>
+              <p>Muebles Cavah</p>
             </a>
           </div>
-          <div class="col-md-4">
-            <a href="https://semikon.com.ar" target="_blank">
-              <img src="assets/img/mockup-semikon.png" style="width: 100%" />
-              <p>
-                <span>Semikon</span><br />Diseño de página web E-COMMERCE
-                / CARRO DE COMPRAS
-              </p>
-            </a>
+        <div>
+          <a href="https://semikon.com.ar" target="_blank">
+            <img src="assets/img/mockup-semikon.png" style="width: 100%" />
+            <h2>Diseño de página web E-COMMERCE / CARRO
+              DE COMPRAS</h2>
+            <p>Semikon</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://tvmasmagazine.com" target="_blank">
+            <img
+              src="assets/img/mockup-tvmasmagazine.png"
+              style="width: 100%"
+            />
+            <h2>Diseño de página web PORTAL DE
+              NOTICIAS</h2>
+              <p>TVMAS MAGAZINE</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://jyeserviciosgenerales.com.ar" target="_blank">
+            <img
+              src="assets/img/mockup-jyeserviciosgenerales.png"
+              style="width: 100%"
+            />
+            <h2>Diseño de página web
+              LANDING PAGE</h2>
+              <p>JYE SERVICIOS GENERALES</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://magicbroomtravel.com" target="_blank">
+            <img
+              src="assets/img/mockup-magicbroomtravel.png"
+              style="width: 100%"
+            />
+            <h2>Diseño de página web AUTO
+              GESTIONABLE</h2>
+              <p>Magic Broom Travel</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://cosechanatural.com.ar" target="_blank">
+            <img
+              src="assets/img/mockup-cosechanatural.png"
+              style="width: 100%"
+            />
+            <h2>Diseño de página web E-COMMERCE
+              / CARRO DE COMPRAS</h2>
+              <p>Cosecha Natural</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://conintec.com.ar" target="_blank">
+            <img src="assets/img/mockup-conintec.png" style="width: 100%" />
+            <h2>Diseño de página web PERSONALIZADA</h2>
+            <p>Conintec</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://depaoli.com.ar" target="_blank">
+            <img src="assets/img/mockup-depaoli.png" style="width: 100%" />
+            <h2>Diseño de página web PERSONALIZADA</h2>
+            <p>DePaoli</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://lavozderosario.com" target="_blank">
+            <img
+              src="assets/img/mockup-lavozderosario.png"
+              style="width: 100%"
+            />
+            <h2>Diseño de página web PORTAL DE
+              NOTICIAS</h2>
+              <p>La Voz De Rosario</p>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://selvaggiesteban.github.io/techincorporated/"
+            target="_blank"
+          >
+            <img
+              src="assets/img/mockup-techincorporated.png"
+              style="width: 100%"
+            />
+            <h2>Diseño de página web
+              PERSONALIZADA</h2>
+              <p>Tech Incorporated</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://santiagoeducation.com" target="_blank">
+            <img src="assets/img/mockup-smartalk.png" style="width: 100%" />
+            <h2>Diseño de página web E-COMMERCE / CARRO
+              DE COMPRAS</h2>
+              <p>Smartalk</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://recomprando.com/inversionistas" target="_blank">
+            <img src="assets/img/mockup-recomprando.png" style="width: 100%" />
+            <h2>Diseño de página web PERSONALIZADA</h2>
+            <p>Recomprando</p>
+          </a>
+        </div>
+      </section>
+      <!-- Contacto -->
+      <section id="contact">
+        <div class="row no-gutters justify-content-around">
+          <h3 style="margin: 72px 0 16px 16px !important">Hablemos</h3>
+          <div class="col-md-6">
+            <p>¿Tienes un proyecto? Ponte en contacto, estoy seguro de que puedo ayudar a posicionarte en el mundo digital y obtener resultados impresionantes.</p>
+            <ul>
+              <li><i class="fa-solid fa-phone fa-2x"></i>(+54) 9 11 5332-3937</li>
+              <li><i class="fa-regular fa-envelope fa-2x"></i>selvaggi.esteban@gmail.com</li>
+              <li><i class="fa-solid fa-location-dot fa-2x"></i>Buenos Aires, Argentina</li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <a href="https://tvmasmagazine.com" target="_blank">
-              <img
-                src="assets/img/mockup-tvmasmagazine.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>TVMAS MAGAZINE</span><br />Diseño de página web PORTAL DE NOTICIAS
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://jyeserviciosgenerales.com.ar" target="_blank">
-              <img
-                src="assets/img/mockup-jyeserviciosgenerales.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>JYE SERVICIOS GENERALES</span><br />Diseño de página web
-                LANDING PAGE
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://magicbroomtravel.com" target="_blank">
-              <img
-                src="assets/img/mockup-magicbroomtravel.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>Magic Broom Travel</span><br />Diseño de página web
-                AUTO GESTIONABLE
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://cosechanatural.com.ar" target="_blank">
-              <img
-                src="assets/img/mockup-cosechanatural.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>Cosecha Natural</span><br />Diseño de página web
-                E-COMMERCE / CARRO DE COMPRAS
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://conintec.com.ar" target="_blank">
-              <img
-                src="assets/img/mockup-conintec.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>Conintec</span><br />Diseño de página web
-                PERSONALIZADA
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://depaoli.com.ar" target="_blank">
-              <img
-                src="assets/img/mockup-depaoli.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>DePaoli</span><br />Diseño de página web
-                PERSONALIZADA
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://lavozderosario.com" target="_blank">
-              <img
-                src="assets/img/mockup-lavozderosario.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>La Voz De Rosario</span><br />Diseño de página web
-                PORTAL DE NOTICIAS
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://selvaggiesteban.github.io/techincorporated/" target="_blank">
-              <img
-                src="assets/img/mockup-techincorporated.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>Tech Incorporated</span><br />Diseño de página web
-                PERSONALIZADA
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://santiagoeducation.com" target="_blank">
-              <img
-                src="assets/img/mockup-smartalk.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>Smartalk</span><br />Diseño de página web
-                E-COMMERCE / CARRO DE COMPRAS
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://recomprando.com/inversionistas" target="_blank">
-              <img
-                src="assets/img/mockup-recomprando.png"
-                style="width: 100%"
-              />
-              <p>
-                <span>Recomprando</span><br />Diseño de página web
-                PERSONALIZADA
-              </p>
-            </a>
+          <div class="col-md-6">
+            <h3>Formulario de contacto</h3>
+            <form id="form"
+                action="webmail.php"
+                method="post"
+                enctype="multipart/form-data"
+                id="contact"
+              >
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nombre y apellidos"
+                  required
+                />
+                <input type="email" id="email" placeholder="E-mail" required />
+                <input
+                  type="tel"
+                  id="tel"
+                  placeholder="Teléfono de contacto"
+                  required
+                />
+                <textarea
+                  id="message"
+                  placeholder="Escribe tu mensaje aquí"
+                ></textarea>
+                <button type="submit">Enviar</button>
+              </form>
           </div>
         </div>
       </section>
       
-      <h3 style="margin: 72px 0 16px 16px !important">Contacto</h3>
-      <section id="contact">
-        <div class="row no-gutters justify-content-around">
-          <div class="col-md-4">
-            <i class="fa-solid fa-phone fa-2x"></i>
-            <h2>(+54) 9 11 5332-3937</h2>
-            <p>Teléfono de contacto</p>
-          </div>
-          <div class="col-md-4">
-            <i class="fa-regular fa-envelope fa-2x"></i>
-            <h2>selvaggi.esteban@gmail.com</h2>
-            <p>E-mail</p>
-          </div>
-          <div class="col-md-4">
-            <i class="fa-solid fa-location-dot fa-2x"></i>
-            <h2>Lanús</h2>
-            <p>Ubicación</p>
-          </div>
-        </div>
-      </section>
-      <section id="form">
-        <h3>Formulario de contacto</h3>
-        <form
-          action="webmail.php"
-          method="post"
-          enctype="multipart/form-data"
-          id="contact"
-        >
-          <input
-            type="text"
-            id="name"
-            placeholder="Nombre y apellidos"
-            required
-          />
-          <input type="email" id="email" placeholder="E-mail" required />
-          <input
-            type="tel"
-            id="tel"
-            placeholder="Teléfono de contacto"
-            required
-          />
-          <textarea
-            id="message"
-            placeholder="Escribe tu mensaje aquí"
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
     </div>
-    <footer>Esteban Selvaggi 2023</footer>
+    <footer>© 2018-2023 – Esteban Selvaggi</footer>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+
+    <script>
+      $(".portfolio").slick({
+        accessibility: true,
+        autopleay: true,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
   </body>
 </html>
