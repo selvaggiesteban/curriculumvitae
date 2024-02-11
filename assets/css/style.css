@@ -163,6 +163,7 @@ a.scroll_down:before {
   background: -webkit-linear-gradient(to right, #ffffff, #f1f1f1);
   background: linear-gradient(to right, #ffffff, #f1f1f1);
   border-radius: 10px;
+  padding: 44px 0;
 }
 #portfolio h2 {
   margin: 22px 0 0 0 !important;
