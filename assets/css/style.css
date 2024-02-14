@@ -169,7 +169,7 @@ a.scroll_down:before {
   text-decoration: none;
   color: #000;
 }
-#portfolio img {
+#portfolio .slick-slide img {
   background: #f1f1f1;
   background: -webkit-linear-gradient(to right, #ffffff, #f1f1f1);
   background: linear-gradient(to right, #ffffff, #f1f1f1);
