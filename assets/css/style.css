@@ -201,7 +201,7 @@ a.scroll_down:before {
   margin: 10px 0;
 }
 #contact a {
-  disaply: flex;
+  display: flex;
   align-items: center;
   text-decoration: none;
 }
