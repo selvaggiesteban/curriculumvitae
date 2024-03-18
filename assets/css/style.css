@@ -187,10 +187,23 @@ a.scroll_down:before {
   padding: 0 0;
   margin: 0 0;
 }
+#contact .social {
+  display: flex;
+}
+@media screen and (max-width: 767.98) {
+  #contact .socia {
+    margin-top: 50px;
+  }
+}
 #contact li {
   display: flex;
   align-items: center;
   margin: 10px 0;
+}
+#contact a {
+  disaply: flex;
+  align-items: center;
+  text-decoration: none;
 }
 #contact svg {
   line-height: 22px;
