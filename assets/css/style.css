@@ -188,6 +188,9 @@ a.scroll_down:before {
 #contact p {
   margin-bottom: 50px;
 }
+#contact h4 {
+  margin-bottom: 22px;
+}
 #contact ul {
   list-style: none;
   padding: 0 0;
