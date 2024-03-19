@@ -11,7 +11,10 @@ h2 {
   font-size: 22px !important;
 }
 h3 {
-  font-size: 24px !important;
+  font-size: 20px !important;
+}
+h4 {
+  font-size: 18px !important;
 }
 p {
   font-size: 18px !important;
@@ -182,6 +185,9 @@ a.scroll_down:before {
 #portfolio p {
   margin: 10px;
 }
+#contact p {
+  margin-bottom: 50px;
+}
 #contact ul {
   list-style: none;
   padding: 0 0;
@@ -191,7 +197,7 @@ a.scroll_down:before {
   display: flex;
 }
 @media screen and (max-width: 767.98) {
-  #contact .socia {
+  #contact .social {
     margin-top: 50px;
   }
 }
